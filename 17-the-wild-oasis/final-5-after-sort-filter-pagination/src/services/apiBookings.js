@@ -10,7 +10,7 @@ export async function getBookings({ filter, sortBy, page }) {
       { count: "exact" }
     );
 
-  // FILTER
+  // eFILTER
   if (filter) query = query[filter.method || "eq"](filter.field, filter.value);
 
   // SORT
